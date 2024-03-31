@@ -17,9 +17,6 @@ header{
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
-}
-
-header{
     margin-top: -2rem;
 }
 .navlist{
@@ -43,6 +40,7 @@ header{
     z-index: 10001;
     cursor: pointer;
     display: none;
+
 }
 .hero2{
     padding: 20px;
@@ -185,21 +183,34 @@ footer {
 hr { 
     border-color: #465154;
 }
-@media (max-width: 2200px){
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+::-webkit-scrollbar-track {
+    background-color: black; 
+}
+@media (max-width: 2800px){
     header{
         width: 100%;
         height: 200px;
     }
     .bane img{
-        width:  950px;
+        width:  1200px;
         height: auto;
     }
     .hero-text2{
-        font-size: 25px;
+        font-size: 30px;
         margin-left: 200px;
     }
     .hero-img img{
-        width: 950px;
+        width: 1200px;
         height: auto;
     }
     .hero h5{
@@ -213,6 +224,24 @@ hr {
     }
     .actor img{
         width: 270px;
+        height: auto;
+    }
+}
+@media (max-width: 2200px){
+    header{
+        width: 100%;
+        height: 200px;
+    }
+    .bane img{
+        width:  900px;
+        height: auto;
+    }
+    .hero-text2{
+        font-size: 25px;
+        margin-left: 200px;
+    }
+    .hero-img img{
+        width: 900px;
         height: auto;
     }
 }
@@ -234,6 +263,10 @@ hr {
     }
     .actor img{
         width: 250px;
+        height: auto;
+    }
+    .hero-img img{
+        width: 1000px;
         height: auto;
     }
 }
@@ -264,7 +297,7 @@ hr {
     }
 
     .bane img{
-        width:  700px;
+        width:  750px;
         height: auto;
     }
     .hero-text2{
@@ -294,7 +327,7 @@ hr {
         transition: .2s;
     }
     .bane img{
-        width:  500px;
+        width:  700px;
         height: auto;
     }
     .hero-text2{
@@ -316,7 +349,7 @@ hr {
         margin-bottom: 0px;
     }
     .bane img{
-        width: 100%;
+        width: 600px;
         height: auto;
     }
 }
@@ -352,8 +385,8 @@ hr {
         height: auto;
     }
     .hero-text2{
-        margin-right: 150px;
-        margin-left: 150px;
+        margin-right: 50px;
+        margin-left: 50px;
         padding-top: 115px;
         font-size: 15px;
     }
@@ -397,11 +430,17 @@ hr {
         width: 700px;
         height: auto;
     }
+    .hero-text2 {
+        margin: 0;
+        line-height: 1.5;
+    }
     .hero-text2 p{
+        margin-right: 50px;
+        margin-left: 50px;
         font-size: 20px;
     }
 }
-@media (max-width: 680px){
+@media (max-width: 740px){
     .hero-img img{
         width: 100%;
         height: auto;
@@ -409,6 +448,15 @@ hr {
     .bane img{
         width:  100%;
         height: auto;
+        margin-left: 0;
+    }
+    .hero-text2 {
+        margin: 0;
+        margin-left: 0;
+        line-height: 1.5;
+    }
+    .hero-text2 p{
+        font-size: 15px;
     }
 }
 @media (max-width: 500px){
@@ -421,11 +469,21 @@ hr {
         margin-left: 8vh;
     }
     .hero-text2 {
-        margin: 0;
-        margin-left: 0;
         line-height: 1.5;
     }
     .hero-text2 p{
+        margin-right: 20px;
+        margin-left: 20px;
         font-size: 15px;
     }
 }    
+@media (max-width: 320px){
+    .navlist{
+        right: -100%;
+        width: 150px;
+        height: 100%;
+    }
+    .actor img{
+        width: 150px;
+    }
+}
